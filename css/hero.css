@@ -1,0 +1,20 @@
+.hero__wrapper {
+  background-image: url('../img/bg.jpeg.crdownload');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+}
+.hero {
+    padding: 15rem 0;
+    text-align: left;
+}
+.hero .title {
+    color: var(--sub-text-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .hero .btn:hover {
+        border-color: var(--sub-text-color);
+        color: var(--sub-text-color);
+    }
+}

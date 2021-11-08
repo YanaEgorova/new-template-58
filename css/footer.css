@@ -1,0 +1,108 @@
+.footer__wrapper {
+  position: relative;
+  padding-top: 2rem;
+  background-color: var(--first-brand-color);
+}
+.footer {
+  /* padding: 0 0 3rem; */
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 2rem;
+}
+.footer__subtitle {
+  margin-bottom: 2rem;
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.footer .list, .footer .sub-list {
+  margin-bottom: 2rem;
+}
+.footer .item:not(:last-child) {
+  margin-bottom: .5rem;
+}
+.footer__link, .footer .text {
+  font-size: 2rem;
+  position: relative;
+}
+.footer__link::after {
+  display: block;
+  content: '';
+  bottom: -.1rem;
+  left: 0;
+  position: absolute;
+  height: 0.1rem;
+  width: 0;
+  background-color: var(--main-text-color);
+  transition: all 0.3s ease-in-out;
+}
+.footer .text--mb {
+  margin-bottom: 2rem;
+}
+.footer__span {
+  font-size: 1.4rem;
+}
+.item--df {
+  display: flex;
+  align-items: center;
+}
+.item--df svg {
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.footer__policies {
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+.footer .item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.footer__policies .footer__block {
+  /* border-top: .1rem solid #000; */
+  padding-top: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .footer__block--df {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .sub-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .sub-list .item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 3rem;
+    padding-right: 3.5rem;
+    position: relative;
+  }
+  .sub-list .item:not(:last-child)::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    top: 50%;
+    right: 0;
+    background-color: #000;
+    transform: translate(0, -50%);
+  }
+  .footer__policies, .footer .text--mb {
+    margin-bottom: 0;
+  }
+  .footer__policies .footer__block {
+    padding-top: 3rem;
+  }
+  .footer__span {
+    display: block;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
